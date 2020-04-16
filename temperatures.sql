@@ -11,7 +11,7 @@ WITH vietnam as(
 	--For a few years there's no temperature data
 	AND avg_temp IS NOT NULL
 	--Records before 1825 are sketchy
-    AND year >  1825
+        AND year >  1825
 	GROUP BY year),
 -- London's data:	
 london as(
